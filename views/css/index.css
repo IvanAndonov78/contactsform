@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #009999;
+}
+
+/*
+#bgr {
+    background-image: url("./views/images/bgr_1653x603.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+#main{
+    margin:0 auto;
+}
+
+#ug-holder {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.ug-titles {
+    margin-top: 8px;
+    margin-bottom:8px;
+}
+
+#login-form {
+    max-width: 100%;
+}
+
+#login-link {
+    background: none;
+    font-size: 14px;
+}
+
+#logout {
+    background: none;
+    font-size: 14px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #101010;
+    color: white;
+    text-align: center;
+}
+
+#insertForm {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+
+#countries {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom:0px;
+    height: 34px;
+    border-radius: 4px;
+}
+
+#admin-report {
+    width: 100%;
+    margin-left:0px;
+    padding-left:0px;
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        /*display:none;*/
+        max-height:40px;
+        font-size: 8px;
+        padding-bottom:12px;
+    }
+    #main {
+        height: 320px;
+        overflow-y: auto;
+        padding-bottom:40px;
+    }
+
+} 
+
+/*collapsible accordion*/
+.accordion-collapsible {
+    /*background-color: #777;*/
+    /*background-color: #101010;*/
+    background-color:#009999;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.active, .accordion-collapsible:hover { 
+    /*background-color: #555;*/
+    background-color: #777;
+}
+  
+.accordion-collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.accordion-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+#result-list {
+    margin-left:6px;
+    padding-left:6px;
+}
